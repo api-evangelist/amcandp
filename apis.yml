@@ -1,23 +1,51 @@
 aid: amcandp
+
 name: Amcandp
-description: 'Amcandp is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Amcandp is a consulting firm focused on improving management skills through artificial emotional intelligence. The company supports businesses worldwide by offering AI‑driven tools and consulting services aimed at enhancing engagement, maintenance processes, and overall managerial effectiveness. Founded with a vision to integrate emotional artificial intelligence into everyday business practices, Amcandp targets the maintenance sector and seeks to expand its impact across various industries.'
+
 url: https://raw.githubusercontent.com/api-evangelist/amcandp/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
 - Company
-apis: []
+- Consulting
+- AI
+- Management
+- Maintenance
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/amcandp-hosts.yml
+- type: Vendors
+  url: vendors/amcandp-vendors.yml
+- type: DomainSecurity
+  url: security/amcandp-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/amcandp
+
+apis: []
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
